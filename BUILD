@@ -24,6 +24,5 @@ py_binary(
     srcs = ["main.py"],
     deps = [
         requirement("openai"),
-        #"@pip//openai",  # Use openai package from lock file via Bazel
     ],
 )
