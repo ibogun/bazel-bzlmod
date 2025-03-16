@@ -1,0 +1,51 @@
+# --- Bazel ---
+bazel-bin/
+bazel-out/
+bazel-testlogs/
+bazel-*/  # Bazel creates a folder per workspace here
+
+# Bazel cache & lock files
+.bazelrc.user
+bazel.rc
+bazel.config
+bazel-workspace.xml
+bazel-projects.json
+.bazelbuild/
+
+# Bazel symlinks
+*.runfiles/
+*.runfiles_manifest
+bazel-shared/
+
+# Bazel module system (Bzlmod)
+MODULE.bazel.lock
+external/  # Bazel-managed external repos (safe to ignore)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.eggs/
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Pip-related
+pip-wheel-metadata/
+*.whl
+
+# Pip-tools temporary files
+*.txt~  # E.g., requirements.txt~ from editing
+
+# --- Misc ---
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.swp
+*.tmp
